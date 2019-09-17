@@ -72,6 +72,14 @@ custom image datagenerator has been implemented for loading 6 channel input data
 custom loss function called alpha loss is implemented to calculate the difference between Ground Truth Mask and Predicted Mask.
 
 
+Things to do (could not due to time constraints)
+
+For training end-to-end, only regression loss has been taken into account, classification loss parameter has not been taken into account.
+
+On the fly cropping and image augmentations have been left out at present due to GPU and time constraints.
+
+I have taken 473x473 as input and output is 320x320 for the full image. No cropping has been done at present. We can add cropping, horizontal flipping as done in paper.
+
 
 
 
