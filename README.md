@@ -9,6 +9,8 @@ The paper takes two networks -
 
 inference.py contains the code for loading the model and its weights from a given location (model location) and runs on a given set of RGB images. It stores the result in a folder provided in the code itself. Please change the location of input path and output path in inference.py to run the code.
 
+Semantic Segmentation Network
+
 1.) Pretrain the PSPNET-50 on your dataset or you can also pretrain it on a big dataset of yours usage: 
 
 I have taken already available PSPNET-50 pretrained on ADE-20K dataset from this location - 
@@ -27,6 +29,31 @@ train_annotations is the location of trimaps (by dilation) created by me from th
 epochs can be set by the user. I have set to 30
 
 The model weights are located in this file -  
-pretrained_tnet.hdf5
+pretrained_tnet.hdf5, the model cannot be shared as its too large, however I can share on google drive.
+
+For just prediction and no training, run the command
+python pretrain_tnet.py x where x can be anything apart from "train_tnet"
+
+The network takes 473 x 473 x 3 image as input and returns a 3 channel trimap of shape (223729x3) which is reshaped to 473x473x3 and concatenated to raw image.
+
+The 3 channel image with 3 channel trimap is then sent to Matting network (encoder-decoder architecture as mentioned in paper) with encoder similar to VGG except dense layers.
+
+
+MATTING NETWORK 
+
+6 channel input is implemented.
+Batch normalization has been applied after each conv layer as mentioned in paper.
+Conv6 and deconv6 have been removed
+encoder has 13 conv layers and 4 max pool layers
+decoder has 6 conv layers and 4 unpool layers
+
+For pretraining this network, python command is --> python pretrain_mnet.py
+
+custom image datagenerator has been implemented for loading 6 channel input data and mask image has been rescaled from (0-255) to (0-1). The order of 6 channels are Red, Green, Blue, Background, Uncertain, Foreground.
+
+custom loss function called alpha loss is implemented to calculate the difference between Ground Truth Mask and Predicted Mask.
+
+
+
 
 
