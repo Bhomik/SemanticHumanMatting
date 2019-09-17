@@ -78,7 +78,7 @@ For training end-to-end, only regression loss has been taken into account, class
 
 On the fly cropping and image augmentations have been left out at present due to GPU and time constraints.
 
-I have taken 473x473 as input and output is 320x320 for the full image. No cropping has been done at present. We can add cropping, horizontal flipping as done in paper.
+I have taken 473x473 as input and output is 320x320 for the full image. No cropping has been done at present. We can add cropping, horizontal flipping as done in paper. 
 
 
 
