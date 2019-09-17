@@ -27,7 +27,7 @@ combined_model.py -- For training end to end pipeline
 
 
 
-Thought process while implementation :
+## Thought process while implementation :
 
 The paper takes two networks -
 1.) Semantic Segmentation Network (E.g. Pspnet-50, Unet etc.)
