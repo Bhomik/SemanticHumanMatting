@@ -32,7 +32,7 @@ Command to run it is : python pretrain_mnet.py
 
 ##### combined_model.py 
 
-For training end to end pipeline
+For training end to end pipeline, provide the path of input_path and mask_path containing images and masks respectively. Also, provide the location to save the trained model in variable filepath.
 
 Command to run it is : python combined_model.py
 
@@ -42,6 +42,7 @@ For creation of trimaps (3 channels are created, with each pixel having a value 
 
 The channels are in order -- Background, Uncertain, Foreground.
 
+Command to run it is : python generate_trimap.py
 
 ## Thought process while implementation :
 
