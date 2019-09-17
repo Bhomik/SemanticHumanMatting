@@ -120,3 +120,7 @@ I have taken 473x473 as input and output is 320x320 for the full image. No cropp
 The whole network is made as one and input image is taken of size 473x473 and output is of shape 320x320.
 training is done with standard parameters like batch size = 2, epochs = 30 . Please change it as per your requirements.
 
+
+## ToDo
+
+Combine the loss functions - Classification and regression loss.
