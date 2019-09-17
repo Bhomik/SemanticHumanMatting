@@ -24,6 +24,7 @@ Now, in order to pretrain this model on the dataset (for e.g. 501 images for ima
 run the command-
 
 for training  --> python pretrain_tnet.py train_tnet
+
 train_images is the location of raw images
 train_annotations is the location of trimaps (by dilation) created by me from the masks.
 epochs can be set by the user. I have set to 30
