@@ -35,7 +35,7 @@ The paper takes two networks -
 
 inference.py contains the code for loading the model and its weights from a given location (model location) and runs on a given set of RGB images. It stores the result in a folder provided in the code itself. Please change the location of input path and output path in inference.py to run the code.
 
-Semantic Segmentation Network
+### Semantic Segmentation Network
 
 1.) Pretrain the PSPNET-50 on your dataset or you can also pretrain it on a big dataset of yours usage: 
 
@@ -70,7 +70,7 @@ The network takes 473 x 473 x 3 image as input and returns a 3 channel trimap of
 The 3 channel image with 3 channel trimap is then sent to Matting network (encoder-decoder architecture as mentioned in paper) with encoder similar to VGG except dense layers.
 
 
-MATTING NETWORK 
+### Matting Network (M-Net) 
 
 6 channel input is implemented.
 
