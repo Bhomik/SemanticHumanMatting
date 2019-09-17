@@ -32,7 +32,9 @@ For training end to end pipeline
 
 ##### generate_trimap.py
 
-For creation of trimaps
+For creation of trimaps (3 channels are created, with each pixel having a value of bg(0,0,1), uncertain(0,1,0), foreground(1,0,0).
+
+The channels are in order of Background, uncertain, Foreground.
 
 
 ## Thought process while implementation :
