@@ -121,8 +121,12 @@ The whole network is made as one and input image is taken of size 473x473 and ou
 training is done with standard parameters like batch size = 2, epochs = 30 . Please change it as per your requirements.
 
 
-## ToDo
+### ToDo
 
 Combine the loss functions - Classification and regression loss. On the fly cropping has not been implemented due to time constraints, but can be done in more time.
 
 Flipping was implemented but due to GPU constraint, I turned it off.
+
+### References
+
+https://github.com/foamliu/Deep-Image-Matting 
