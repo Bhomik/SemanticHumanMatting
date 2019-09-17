@@ -373,22 +373,22 @@ acc = history.history['acc']
 
 loss = history.history['loss']
 
-fig = plt.figure()
-plt.plot(history.history['loss'])
-plt.title('Model Loss')
-plt.ylabel('Loss')
-plt.xlabel('Epoch')
-plt.legend(['Train_loss'], loc='upper left')
+# fig = plt.figure()
+# plt.plot(history.history['loss'])
+# plt.title('Model Loss')
+# plt.ylabel('Loss')
+# plt.xlabel('Epoch')
+# plt.legend(['Train_loss'], loc='upper left')
 
-plt.show()
-fig.savefig('/mnt/disk3/rohit2/bhomik_work/flixstock/shm_data/mnet_checkpoint_loc/loss.png', format = 'png')
+# plt.show()
+# fig.savefig('/mnt/disk3/rohit2/bhomik_work/flixstock/shm_data/mnet_checkpoint_loc/loss.png', format = 'png')
 
-fig = plt.figure()
-plt.plot(history.history['acc'])
-plt.title('Model accuracy')
-plt.ylabel('accuracy')
-plt.xlabel('Epoch')
-plt.legend(['Train_accuracy'], loc='upper left')
+# fig = plt.figure()
+# plt.plot(history.history['acc'])
+# plt.title('Model accuracy')
+# plt.ylabel('accuracy')
+# plt.xlabel('Epoch')
+# plt.legend(['Train_accuracy'], loc='upper left')
 
-plt.show()
-fig.savefig('/mnt/disk3/rohit2/bhomik_work/flixstock/shm_data/mnet_checkpoint_loc/accuracy.png', format = 'png')
+# plt.show()
+# fig.savefig('/mnt/disk3/rohit2/bhomik_work/flixstock/shm_data/mnet_checkpoint_loc/accuracy.png', format = 'png')
