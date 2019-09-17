@@ -1,6 +1,16 @@
 # SemanticHumanMatting
 This code provides the implementation of Semantic Human Matting paper (by Alibaba)
 
+**Installing**
+
+Install the module
+
+pip install keras-segmentation
+or
+git clone https://github.com/divamgupta/image-segmentation-keras
+cd image-segmentation-keras
+python setup.py install
+
 pretrain_mnet.py -- For pretraining M-net, provide the path of input images, mask location and trimap location (created by dilating masks), location to save the model, loss and accuracy graph.
 
 pretrain_tnet.py -- For pretraining T-net, provide the input_path, trimap_path (as GT, created by dilating masks), checkpoints_path and output_path(to store the output of images in input_path)
@@ -26,7 +36,7 @@ I have taken already available PSPNET-50 pretrained on ADE-20K dataset from this
 https://www.dropbox.com/s/0uxn14y26jcui4v/pspnet50_ade20k.h5?dl=1:
 Please download it and place it in .keras/datasets/pspnet50_ade20k.h5
 
-The architecture of pspnet-50 has been imported from https://github.com/qubvel/segmentation_models
+The architecture of pspnet-50 has been imported from https://github.com/divamgupta/image-segmentation-keras
 Transfer the weights from .keras/datasets/pspnet50_ade20k.h5 to the model architecture defined by you.
 
 Now, in order to pretrain this model on the dataset (for e.g. 501 images for image matting problem),
