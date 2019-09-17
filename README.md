@@ -6,9 +6,13 @@ This code provides the implementation of Semantic Human Matting paper (by Alibab
 Install the module
 
 pip install keras-segmentation
+
 or
+
 git clone https://github.com/divamgupta/image-segmentation-keras
+
 cd image-segmentation-keras
+
 python setup.py install
 
 pretrain_mnet.py -- For pretraining M-net, provide the path of input images, mask location and trimap location (created by dilating masks), location to save the model, loss and accuracy graph.
