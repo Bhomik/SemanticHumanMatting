@@ -112,7 +112,7 @@ For training end-to-end, only regression loss has been taken into account, class
 
 On the fly cropping and image augmentations have been left out at present due to GPU and time constraints.
 
-I have taken 473x473 as input and output is 320x320 for the full image. No cropping has been done at present. We can add cropping, horizontal flipping as done in paper. 
+I have taken 473x473 as input and output is 320x320 for the full image. 
 
 
 ### End-to-end Network
@@ -123,4 +123,6 @@ training is done with standard parameters like batch size = 2, epochs = 30 . Ple
 
 ## ToDo
 
-Combine the loss functions - Classification and regression loss.
+Combine the loss functions - Classification and regression loss. On the fly cropping has not been implemented due to time constraints, but can be done in more time.
+
+Flipping was implemented but due to GPU constraint, I turned it off.
