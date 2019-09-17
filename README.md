@@ -129,4 +129,6 @@ Flipping was implemented but due to GPU constraint, I turned it off.
 
 ### References
 
+https://github.com/divamgupta/image-segmentation-keras
 https://github.com/foamliu/Deep-Image-Matting 
+https://github.com/qubvel/segmentation_models
