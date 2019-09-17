@@ -30,7 +30,9 @@ For pretraining T-net, provide the input_path, trimap_path (as GT, created by di
 
 For training end to end pipeline
 
+##### generate_trimap.py
 
+For creation of trimaps
 
 
 ## Thought process while implementation :
