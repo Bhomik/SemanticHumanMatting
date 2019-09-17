@@ -247,19 +247,3 @@ if __name__ == '__main__':
         save_path = final_prediction_path + full_path_raw_images[j].rsplit("/",1)[-1].split(".")[0]+'.png'
         print (save_path)
         cv2.imwrite(save_path, prediction)
-
-
-#
-    # print ("unique values in op are", np.unique(pr))
-    # pr = pr.reshape(( output_height ,  output_width , n_classes ) ).argmax( axis=2 )
-    # # print ("unique values in op are", np.unique(pr))
-
-    # seg_img = np.zeros( ( output_height , output_width , 3  ) )
-    # colors = class_colors
-
-    # for c in range(n_classes):
-    #     seg_img[:,:,0] += ( (pr[:,: ] == c )*( colors[c][0] )).astype('uint8')
-    #     seg_img[:,:,1] += ((pr[:,: ] == c )*( colors[c][1] )).astype('uint8')
-    #     seg_img[:,:,2] += ((pr[:,: ] == c )*( colors[c][2] )).astype('uint8')
-
-    # seg_img = cv2.resize(seg_img  , (orininal_w , orininal_h ))
