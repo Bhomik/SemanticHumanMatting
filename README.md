@@ -18,11 +18,17 @@ python setup.py install
 
 # Codes
 
-pretrain_mnet.py -- For pretraining M-net, provide the path of input images, mask location and trimap location (created by dilating masks), location to save the model, loss and accuracy graph.
+##### pretrain_mnet.py  
 
-pretrain_tnet.py -- For pretraining T-net, provide the input_path, trimap_path (as GT, created by dilating masks), checkpoints_path and output_path(to store the output of images in input_path)
+For pretraining M-net, provide the path of input images, mask location and trimap location (created by dilating masks), location to save the model, loss and accuracy graph.
 
-combined_model.py -- For training end to end pipeline
+##### pretrain_tnet.py 
+
+For pretraining T-net, provide the input_path, trimap_path (as GT, created by dilating masks), checkpoints_path and output_path(to store the output of images in input_path)
+
+##### combined_model.py 
+
+For training end to end pipeline
 
 
 
